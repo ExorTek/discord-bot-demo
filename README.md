@@ -1,1 +1,1 @@
-# ExoBot-discord
+# Demo Bot
