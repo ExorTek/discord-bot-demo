@@ -34,7 +34,17 @@ client.on('message', message => {
         client.commands.get('Role').execute(message, args);
     }else if (command === 'roleremove') {
         client.commands.get('Role Remove').execute(message, args);
+    }else if (command === 'command') {
+        client.commands.get('Command').execute(message, args,Discord);
+    }else if (command === 'clear') {
+        client.commands.get('Clear Message').execute(message, args,Discord);
+    }else if (command === 'kick') {
+        client.commands.get('Kick User').execute(message, args,Discord);
+    }else if (command === 'ban') {
+        client.commands.get('Ban User').execute(message, args,Discord);
+    }else if (command === 'mute') {
+        client.commands.get('Mute').execute(message, args,Discord);
     }
 });
 
-client.login('-');
+client.login('ODI4NzAwNjc5OTI0NzQ0MjM0.YGtZpg.v6VLjLyuOcDhobNhExPyRFMHCt4');
