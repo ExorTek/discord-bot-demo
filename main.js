@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '-';
+const prefix = '!';
 const fs = require('fs');
 
 client.commands = new Discord.Collection();
@@ -47,4 +47,4 @@ client.on('message', message => {
     }
 });
 
-client.login('ODI4NzAwNjc5OTI0NzQ0MjM0.YGtZpg.v6VLjLyuOcDhobNhExPyRFMHCt4');
+client.login('ODI4NzAwNjc5OTI0NzQ0MjM0.YGtZpg.B1RVwcVYY3hmm9Ma-hvqvWtYVyA');
