@@ -9,6 +9,8 @@ module.exports = {
         message.channel.send('Deleted messages!');
         message.channel.messages.fetch({limit: args[0]}).then(messages => {
             message.channel.bulkDelete(messages);
+        }).catch(error=>{
+            message.channel.send(error);
         })
     }
 }
